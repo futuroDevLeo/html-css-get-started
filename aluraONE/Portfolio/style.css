@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +14,25 @@ body {
 
 .titulo-destaque {
     color: #22D4FD;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+.display__content {
+    width: 615px;
+}
+
+.display__content__title {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.display__content__text {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
 }
