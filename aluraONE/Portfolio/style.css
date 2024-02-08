@@ -20,11 +20,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10%;
+    margin: 10% 15%;
 }
 
 .display__content {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .display__content__title {
@@ -53,4 +56,10 @@ body {
     text-decoration: none;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
+}
+
+.display__img {
+    width: 450px;
+    height: 500px;
+    border-radius: 16px;
 }
