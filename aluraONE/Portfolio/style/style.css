@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root {
+    --main-bg-color: #100F1E;
+    --text-color: #D8D8CF;
+    --emphasis-color: #22d4fd;
+    --hover-color: #15142E;
+
+    --primary-font: 'Krona One', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +17,8 @@
 
 body {
     box-sizing: border-box;
-    background-color: black;
-    color: #f6f6f6;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
 }
 
 header {
@@ -21,10 +31,10 @@ header {
 }
 
 .header__menu__link {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-family: var(--secundary-font);
+    font-size: 20px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--emphasis-color);
     text-decoration: none;
 }
 
@@ -32,28 +42,28 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 12%;
+    padding: 3% 15%;
 }
 
 .display__content {
     width: 615px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
 .display__content__title {
-    font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-size: 32px;
+    font-family: var(--primary-font);
 }
 
 .title-emphasis {
-    color: #22D4FD;
+    color: var(--emphasis-color);
 }
 
 .display__content__text {
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-family: var(--secundary-font);
 }
 
 .display__content__buttons {
@@ -61,13 +71,13 @@ header {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 15px;
 }
 
 .display__content__buttons__subtitle {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .display__content__buttons__links {
@@ -77,25 +87,30 @@ header {
     width: 378px;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid #22D4FD;
-    font-size: 24px;
+    border: 2px solid var(--emphasis-color);
+    font-size: 22px;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 20px 0;
     text-decoration: none;
-    color: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-family: var(--secundary-font);
 }
 
 .display__content__buttons__links:hover {
-    background-color: #272727;
+    background-color: var(--hover-color);
+}
+
+.display__img {
+    width: 450px;
+    height: 500px;
 }
 
 footer {
-    color: #000000;
-    background-color: #22D4FD;
-    padding: 24px;
+    color: var(--main-bg-color);
+    background-color: var(--emphasis-color);
+    padding: 20px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--secundary-font);
     font-size: 20px;
     font-weight: 400;
 }
