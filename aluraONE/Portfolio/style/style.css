@@ -32,7 +32,7 @@ header {
 
 .header__menu__link {
     font-family: var(--secundary-font);
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--emphasis-color);
     text-decoration: none;
@@ -43,6 +43,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 3% 15%;
+    gap: 70px;
 }
 
 .display__content {
@@ -112,4 +113,23 @@ footer {
     font-family: var(--secundary-font);
     font-size: 1.25rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 4%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+    
+    .display {
+        flex-direction: column-reverse;
+        padding: 0% 5% 5% 5%;
+    }
+
+    .display__content {
+        width: auto;
+    }
 }
