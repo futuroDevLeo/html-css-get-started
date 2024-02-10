@@ -32,7 +32,7 @@ header {
 
 .header__menu__link {
     font-family: var(--secundary-font);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--emphasis-color);
     text-decoration: none;
@@ -46,14 +46,14 @@ header {
 }
 
 .display__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .display__content__title {
-    font-size: 32px;
+    font-size: 2rem;
     font-family: var(--primary-font);
 }
 
@@ -62,7 +62,7 @@ header {
 }
 
 .display__content__text {
-    font-size: 22px;
+    font-size: 1.4rem;
     font-family: var(--secundary-font);
 }
 
@@ -77,18 +77,18 @@ header {
 .display__content__buttons__subtitle {
     font-family: var(--primary-font);
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.4rem;
 }
 
 .display__content__buttons__links {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     border: 2px solid var(--emphasis-color);
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 600;
     padding: 20px 0;
     text-decoration: none;
@@ -101,8 +101,7 @@ header {
 }
 
 .display__img {
-    width: 450px;
-    height: 500px;
+    width: 50%;
 }
 
 footer {
@@ -111,6 +110,6 @@ footer {
     padding: 20px;
     text-align: center;
     font-family: var(--secundary-font);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
